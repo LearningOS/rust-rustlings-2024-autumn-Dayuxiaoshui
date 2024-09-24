@@ -9,10 +9,10 @@
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");
-    }
+    };  // Add a semicolon here to separate this arm from the next
     ($val:expr) => {
         println!("Look at this other macro: {}", $val);
-    }
+    };
 }
 
 fn main() {

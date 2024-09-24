@@ -4,13 +4,12 @@
 // hint.
 
 // I AM NOT DONE
-
-fn main() {
-    my_macro!();
+macro_rules! my_macro {
+    ($msg:expr) => {
+        println!("{}", $msg);
+    };
 }
 
-macro_rules! my_macro {
-    () => {
-        println!("Check out my macro!");
-    };
+fn main() {
+    my_macro!("Hello from my macro!");
 }
