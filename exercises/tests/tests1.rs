@@ -16,6 +16,6 @@
 mod tests {
     #[test]
     fn you_can_assert() {
-        assert!(false); // This assertion will fail.
+        assert!(true); // 修改为 true，让测试通过
     }
 }
